@@ -1,0 +1,127 @@
+:root {
+    --color-primario: #d11d65;
+    --color-secundario: #3b2d38;
+    --color-bg: #3d6a5d;
+    --color-input: #f4d90b;
+    --bg: #bcbdac;
+    --text-size: 1.5rem;
+    --color-text: #67b588;
+}
+
+body {
+    font-family: "Josefin Slab", serif;
+    background-color: var(--bg);
+    height: 100vh;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.conteiner {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre secciones */
+}
+
+.encabezado {
+    padding: 10px 0 5px 0;
+    text-align: center;
+}
+
+.agregar {
+    background-color: var(--color-bg);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.agregar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+    padding-left: 10px;
+    color: var(--color-text);
+    font-size: 1.1rem;
+}
+
+#input::placeholder {
+    font-size: 1.1rem;
+    color: var(--color-input);
+}
+
+.agregar i {
+    font-size: 2rem; /* Tamaño más uniforme */
+    color: var(--color-secundario);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.agregar i:hover {
+    transform: scale(1.1);
+}
+
+/* Lista de tareas */
+#lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista li {
+    background-color: var(--color-bg);
+    border-radius: 15px;
+    padding: 10px;
+    color: #3b2d38;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Íconos a los extremos */
+}
+
+#lista li i {
+    font-size: 1.5rem;
+    color: var(--bg);
+    cursor: pointer;
+}
+
+#lista li p {
+    flex: 4; 
+    margin: 0 20px; 
+    text-align: left;
+    color: var(--color-input); 
+}
+
+#lista i:hover {
+    color: var(--color-input);
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: var(--color-secundario);
+}
+
+/* se me ocurre imagenes motivadoras */
+.motivacion-boxeo {
+    position: relative; /* Posiciona la imagen dentro del flujo normal */
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantén la proporción */
+    float: left; /* Alinea la imagen a la izquierda del contenido */
+    margin-right: 15px; /* Espaciado entre la imagen y el texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra decorativa */
+}
